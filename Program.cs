@@ -4,18 +4,13 @@
     {
         static void Main(string[] args)
         {
-            string str = "rameshwar";
-            char[] arr = str.ToCharArray();
+            int[] number = {2,4,6,5,7,9,10};
 
-            for (int i = 0; i < str.Length; i++)
+            foreach (int item in number.Where(n => n % 2 == 0))
             {
-                arr[i] = str[str.Length - 1 - i];
+                Console.WriteLine(item + " Is Even Number");
             }
-            //for (int i = 1; i < 100; i++) 
-            //{
-
-            //}
-            Console.WriteLine(arr);
+            //Console.WriteLine(arr);
             Console.ReadLine();
         }
     }
